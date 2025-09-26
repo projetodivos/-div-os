@@ -1,8 +1,8 @@
 # -div-os
 ```markdown
-# Projeto <div>os
+#Projeto <div>os
 
-## Visão Geral
+##Visão Geral
 
 O **Projeto `<div>os`** é uma página web desenvolvida em **HTML, CSS e Java**, voltada para quem deseja aprender HTML de forma gratuita e acessível.
 
