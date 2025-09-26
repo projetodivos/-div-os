@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title> <div>os </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+      <header>
+        <a href="#Home">
+    	<img src="img/logo.png" alt="Logo do site">
+	<nav>
+            <ul class="nav-links">
+                <li><a href="#Home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#Classroom"><i class="fas fa-code"></i> Classroom</a></li>
+                <li><a href="#about"><i class="fa-solid fa-address-card"></i> About</a></li>
+            </ul>
+        </nav>
+      </header>
+    </section><br>
+    <section class="main">
+        <h2><span class="asterisk">*</span><h2 class="neon-title">Do zero ao código: <b>HTML</b></h2> 
+           </section>
+    <section class="content-box">
+        <section class="Classroom">
+            <h1>🖥️ HTML Básico: <small>Guia Nerd para Iniciantes</small></h1>
+          
+            <p>Se você está entrando no mundo do desenvolvimento web, o <strong>HTML</strong> é o ponto de partida. Ele é como a “espinha dorsal” da internet — dá a estrutura, define o que aparece na tela e organiza o conteúdo.</p>
+          
+            <p>O segredo está nas <strong>tags</strong>, que são como comandos que dizem ao navegador: <em>“ei, isso aqui é um título!”</em> ou <em>“isso aqui é uma imagem!”</em>. Vamos conhecer as principais:</p>
+          
+            <hr>
+          </p></section><br>
+          
+<section class="content-box">  
+  <h2>🔹 Introdução ao HTML</h2>  
+
+  <p>O HTML (HyperText Markup Language) é a linguagem usada para estruturar páginas da web.  
+  Todo documento HTML começa com uma estrutura básica que informa ao navegador como interpretar o conteúdo.</p>  
+
+  <h3>📌 Estrutura inicial de um documento HTML</h3>  
+
+  <pre>
+&lt;!DOCTYPE html&gt;  
+&lt;html lang="pt-BR"&gt;  
+  &lt;head&gt;  
+    &lt;meta charset="UTF-8"&gt;  
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;  
+    &lt;title&gt;Minha Primeira Página&lt;/title&gt;  
+  &lt;/head&gt;  
+  &lt;body&gt;  
+    &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;  
+    &lt;p&gt;Este é o meu primeiro parágrafo em HTML.&lt;/p&gt;  
+  &lt;/body&gt;  
+&lt;/html&gt;  
+  </pre>  
+
+  <h3>🔎 Explicando os principais elementos</h3>  
+  <ul>  
+    <li><strong>&lt;!DOCTYPE html&gt;</strong>: informa ao navegador que o documento está usando HTML5.</li>  
+    <li><strong>&lt;html lang="pt-BR"&gt;</strong>: define o idioma da página.</li>  
+    <li><strong>&lt;meta charset="UTF-8"&gt;</strong>: garante que caracteres especiais como acentos sejam exibidos corretamente.</li>  
+    <li><strong>&lt;meta name="viewport"&gt;</strong>: ajuda a página a se adaptar a diferentes tamanhos de tela (responsividade).</li>  
+    <li><strong>&lt;title&gt;</strong>: define o título que aparece na aba do navegador.</li>  
+    <li><strong>&lt;h1&gt; até &lt;h6&gt;</strong>: títulos e subtítulos, do mais importante (&lt;h1&gt;) ao menos relevante (&lt;h6&gt;).</li>  
+    <li><strong>&lt;p&gt;</strong>: representa um parágrafo de texto.</li>  
+  </ul>  
+</section>  
+          
+	<section class="content-box">
+            <h2>🔹 Títulos: &lt;h1&gt; até &lt;h6&gt;</h2>
+          
+            <p>Essas tags definem cabeçalhos.</p>
+          
+            <ul>
+              <li>&lt;h1&gt; é o mais importante (usado geralmente no título principal da página).</li>
+              <li>&lt;h2&gt; até &lt;h6&gt; são subtítulos, cada vez menores em importância e tamanho.</li>
+            </ul>
+          
+            <p>(imagem vscode)</p>
+          
+            <pre><code>&lt;h1&gt;Meu Site&lt;/h1&gt;
+          &lt;h2&gt;Seção de Notícias&lt;/h2&gt;
+          &lt;h3&gt;Notícia 1&lt;/h3&gt;</code></pre>
+	</section> <br>
+	
+        <section class="content-box">  
+            <h2>🔹 Parágrafos: &lt;p&gt;</h2>
+          
+            <p>Tudo o que você escreve como texto corrido vai dentro de &lt;p&gt;. É a forma padrão de criar blocos de texto.</p>
+          
+            <p>👉 Exemplo:</p>
+          
+            <p>(imagem vscode)</p>
+          
+            <pre><code>&lt;p&gt;Esse é um parágrafo de exemplo.&lt;/p&gt;</code></pre>
+	</section><br> 
+          <section class="content-box">
+            <h2>🔹 Links: &lt;a&gt;</h2>
+          
+            <p>Com a tag &lt;a&gt;, você cria links para outros sites ou páginas.</p>
+          
+            <ul>
+              <li>O atributo href indica o destino.</li>
+              <li>O atributo target=”_blank” abre em uma nova aba.</li>
+            </ul>
+          
+            <p>👉 Exemplo:</p>
+          
+            <p>(imagem vscode)</p>
+          
+            <pre><code>&lt;a href="https://www.wikipedia.org" target="_blank"&gt;Ir para a Wikipédia&lt;/a&gt;</code></pre>
+	
+        </section><br>
+	<section class="content-box">  
+            <h2>🔹 Imagens: &lt;img&gt;</h2>
+          
+            <p>Usamos &lt;img&gt; para exibir imagens.</p>
+          
+            <ul>
+              <li>O atributo src é o caminho da imagem.</li>
+              <li>O atributo alt descreve a imagem (importante para acessibilidade e SEO).</li>
+            </ul>
+          
+            <p>👉 Exemplo:</p>
+          
+            <p>(imagem vscode)</p>
+          
+            <pre><code>&lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;</code></pre>
+	</section><br>
+	
+        <section class="content-box">  
+            <h2>🔹 Listas: &lt;ul&gt;, &lt;ol&gt; e &lt;li&gt;</h2>
+          
+            <ul>
+              <li>&lt;ul&gt; → lista não ordenada (bolinhas).</li>
+              <li>&lt;ol&gt; → lista ordenada (números).</li>
+              <li>&lt;li&gt; → cada item da lista.</li>
+            </ul>
+          
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          
+            <ol>
+              <li>Estudar HTML</li>
+              <li>Praticar exercícios</li>
+              <li>Criar projetos</li>
+            </ol>
+	</section> <br>
+          <section class="content-box">
+            <h2>🔹 Quebra de linha: &lt;br&gt;</h2>
+          
+            <p>Funciona como um "Enter". Use quando quiser forçar uma quebra de linha sem abrir um novo parágrafo.</p>
+          
+            <p>👉 Exemplo:</p>
+          
+            <pre><code>&lt;p&gt;Linha 1&lt;br&gt;Linha 2&lt;/p&gt;</code></pre>
+	</section><br>
+          <section class="content-box">
+            <h3>📄 Código Completo de Exemplo para printar no vscode</h3>
+          
+            <pre><code>&lt;!DOCTYPE html&gt;
+          &lt;html lang="pt-BR"&gt;
+          &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;title&gt;Página de Exemplo&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;Bem-vindo ao HTML&lt;/h1&gt;
+            &lt;p&gt;Esse é um &lt;strong&gt;parágrafo&lt;/strong&gt; de exemplo para treinar.
+            Aprender HTML é a base para criar qualquer site na web.&lt;/p&gt;
+          
+            &lt;h2&gt;Lista de Tags Importantes&lt;/h2&gt;
+            &lt;ul&gt;
+              &lt;li&gt;&lt;h1&gt; até &lt;h6&gt; → títulos&lt;/li&gt;
+              &lt;li&gt;&lt;p&gt; → parágrafos&lt;/li&gt;
+              &lt;li&gt;&lt;a&gt; → links&lt;/li&gt;
+              &lt;li&gt;&lt;img&gt; → imagens&lt;/li&gt;
+              &lt;li&gt;&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; → listas&lt;/li&gt;
+            &lt;/ul&gt;
+          
+            &lt;h2&gt;Exemplo de Link&lt;/h2&gt;
+            &lt;p&gt;Visite o
+              &lt;a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"&gt;
+                guia oficial no MDN
+              &lt;/a&gt;
+              para aprender mais.
+            &lt;/p&gt;
+          
+            &lt;h2&gt;Exemplo de Imagem&lt;/h2&gt;
+            &lt;img src="https://picsum.photos/300" alt="Imagem aleatória para exemplo"&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;</code></pre>
+          </section></section>
+          
+    </section>
+    <section class="about">
+        <h2>ABOUT</h2>
+        <p>O projeto <b>&lt;div&gt;os code</b> é uma página web desenvolvida em <b>HTML, CSS e Java</b>, voltada para quem deseja aprender HTML de forma gratuita e acessível. 
+            O conteúdo atende tanto iniciantes que nunca tiveram contato com a área quanto pessoas que já atuam em tecnologia e querem revisar fundamentos.             
+            Nosso objetivo é criar uma página que será web desenvolvida em <b>HTML, CSS e Java</b>, voltada para quem deseja aprender HTML de forma gratuita e acessível. 
+            O conteúdo atende tanto iniciantes que nunca tiveram contato com a área quanto pessoas que já atuam em tecnologia e querem revisar fundamentos básicos. 
+            Nosso objetivo é criar uma página <b>minimalista, funcional e clara</b>, com explicações simples, exemplos visuais e exercícios práticos que aproximem a teoria de situações reais, minimalista, funcional e clara, com explicações diretas, exemplos visuais e exercícios práticos que aproximem a teoria de situações reais.</p>
+        <nav class="nav-about">
+            <ul>
+                <p>
+                    <a href="https://github.com/projetodivos"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:projetodivos@gmail.com?subject=Contato&body=Olá, gostaria de fazer uma pergunta sobre o projeto..."><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/projeto_divos/"><i class="fa-brands fa-instagram"></i></a>
+                </p>
+        </ul>
+        </nav>
+    </section>
+    <footer>
+        <p>&copy; 2025 Divos. Todos os direitos reservados.</p>
+    </footer>    
+</body>
+</html>
