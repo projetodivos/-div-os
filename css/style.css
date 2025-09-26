@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --cor-fundo: #f5f6fa;   /* fundo claro */
+  --cor-principal: #2c3e50; /* texto principal */
+  --cor-secundaria: #3498db; /* azulzin pra dar cor */
+  --cor-branca: #ffffff;
+  --sombra-card: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --raio-borda: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.neon-title {
+    color: #2c3e50; /* cor principal do neon */
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 
+        0 0 5px #3498db,
+        0 0 10px #0b6666,
+        0 0 10px #a4cccca6,
+        0 0 10px #85d8d8,
+        0 0 10px #36b1b1;
+    margin-bottom: 1rem; 
+}
+.asterisk {
+    display: inline-block;
+    color: #3498db;
+    margin-right: 10px;
+    animation: spin 0.1s linear infinite; 
+    font-size: 5.5rem; 
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--cor-fundo);
+  color: var(--cor-principal);
+  line-height: 1.6;
+}
+
+/* Cabeçalho fixo */
+header {
+  background: var(--cor-branca);
+  padding: 1.8rem 2rem;
+  box-shadow: var(--sombra-card);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* 🔹 Títulos mais legíveis */
+.content-box h1,
+.content-box h2,
+.content-box h3 {
+  font-family: 'Roboto Mono', monospace; /* mantém o estilo nerd/tech */
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--cor-principal); /* cor escura pro título */
+  text-align: center;
+  border-bottom: 2px solid var(--cor-secundaria);
+  padding-bottom: 0.5rem;
+}
+
+/* 🔹 Padronizar tamanho das caixinhas */
+.content-box {
+  background: var(--cor-branca);
+  margin: 2rem auto;
+  padding: 2rem;
+  width: 100%;
+  max-width: 900px; /* todas no mesmo limite */
+  min-height: 280px; /* altura mínima pra padronizar */
+  border-radius: var(--raio-borda);
+  box-shadow: var(--sombra-card);
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.content-box p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.8; 
+  color: #333;
+}
+
+.content-box ul,
+.content-box ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+
+header img {
+  height: 40px; 
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--cor-principal);
+  transition: color 0.5s;
+}
+
+.nav-links a:hover {
+  color: var(--cor-secundaria);
+}
+
+/* Hero = capa principal */
+.hero {
+  text-align: center;
+  padding: 7rem 2rem 4rem; 
+  background: var(--cor-branca);
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: var(--raio-borda);
+  box-shadow: var(--sombra-card);
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.0rem;
+  margin-bottom: 2rem;
+  text-align: justify; /* justificado */
+}
+
+/* Botão */
+.btn {
+  display: inline-block;
+  background: var(--cor-secundaria);
+  color: var(--cor-branca);
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.5s;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+/* Geral */
+section {
+  background: var(--cor-branca);
+  margin: 1.5rem auto;
+  padding: 1.8rem;
+  max-width: 800px;
+  border-radius: var(--raio-borda);
+  box-shadow: var(--sombra-card);
+  text-align: justify; /* textos justificados */
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--cor-secundaria);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  text-align: center; /* títulos centralizados */
+  width: 100%;
+}
+
+/* Seção About */
+.about {
+  text-align: center;
+}
+
+.about p {
+  text-align: justify;
+  margin: 1rem auto;
+  max-width: 750px; /* margens menores */
+}
+
+/* Ícones sociais centralizados */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  font-size: 5.8rem;
+  color: var(--cor-secundaria);
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  transform: scale(5.2);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 2.0rem;
+  margin-top: 2rem;
+  background: var(--cor-branca);
+  box-shadow: var(--sombra-card);
+  border-radius: var(--raio-borda) var(--raio-borda) 0 0;
+}
